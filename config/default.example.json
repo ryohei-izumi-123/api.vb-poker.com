@@ -1,0 +1,448 @@
+{
+    "logger": {
+        "log4js": {
+            "appenders": {
+                "system": {
+                    "type": "file",
+                    "filename": "logs/system.log",
+                    "maxLogSize": 1048576,
+                    "backups": 3
+                },
+                "access": {
+                    "type": "dateFile",
+                    "filename": "logs/access.log",
+                    "pattern": "-yyyy-MM-dd"
+                },
+                "error": {
+                    "type": "dateFile",
+                    "filename": "logs/error.log",
+                    "pattern": "-yyyy-MM-dd"
+                },
+                "console": {
+                    "type": "console"
+                },
+                "stdout": {
+                    "type": "stdout"
+                }
+            },
+            "categories": {
+                "default": {
+                    "appenders": [
+                        "access",
+                        "console",
+                        "stdout"
+                    ],
+                    "level": "INFO"
+                },
+                "access": {
+                    "appenders": [
+                        "access",
+                        "console",
+                        "stdout"
+                    ],
+                    "level": "INFO"
+                },
+                "system": {
+                    "appenders": [
+                        "system",
+                        "console",
+                        "stdout"
+                    ],
+                    "level": "ALL"
+                },
+                "error": {
+                    "appenders": [
+                        "error",
+                        "console",
+                        "stdout"
+                    ],
+                    "level": "WARN"
+                }
+            },
+            "replaceConsole": true
+        },
+        "winston": {
+            "console": {
+                "handleExceptions": true,
+                "json": false,
+                "colorize": true,
+                "timestamp": true
+            },
+            "file": {
+                "handleExceptions": true,
+                "json": false,
+                "colorize": true,
+                "timestamp": true,
+                "datePattern": "YYYY-MM-DD",
+                "zippedArchive": true,
+                "maxSize": "100m",
+                "maxFiles": "30d"
+            },
+            "label": "LOGGER",
+            "level": "debug",
+            "exitOnError": false,
+            "format": {
+                "timestamp": "YYYY-MM-DD HH:mm:ss",
+                "filename": "./logs/app-%DATE%.log"
+            }
+        },
+        "morgan": {
+            "immediate": true,
+            "level": "combined",
+            "format": "[URL: :url] [UA: :user-agent]"
+        }
+    },
+    "redis": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 6379,
+        "options": {
+            "no_ready_check": true
+        }
+    },
+    "mongodb": {
+        "autoReconnect": true,
+        "noDelay": true,
+        "keepAlive": true,
+        "bufferCommands": false,
+        "useFindAndModify": false,
+        "useCreateIndex": true,
+        "useNewUrlParser": true,
+        "useUnifiedTopology": true,
+        "autoIndex": true,
+        "poolSize": 100,
+        "reconnectTries": 100,
+        "socketTimeoutMS": 10000,
+        "connectTimeoutMS": 10000,
+        "reconnectInterval": 500,
+        "bufferMaxEntries": 0,
+        "useCredentials": true,
+        "username": "root",
+        "password": "password",
+        "dbName": "test",
+        "host": "127.0.0.1",
+        "port": 27017,
+        "useReplica": false,
+        "replicaSet": "test_repl",
+        "replset": {
+            "readPreference": "SECONDARY"
+        },
+        "family": 4
+    },
+    "acl": {
+        "prefix": "acl_",
+        "useSingle": true,
+        "v2": {
+            "baseUrl": "",
+            "filename": "acl.json",
+            "path": "config",
+            "defaultRole": "player",
+            "decodedObjectName": "user",
+            "roleSearchPath": "user.roles.name",
+            "rules": [
+                {
+                    "group": "user",
+                    "permissions": [
+                        {
+                            "resource": "test/*",
+                            "methods": [
+                                "POST",
+                                "GET",
+                                "PUT"
+                            ],
+                            "action": "allow"
+                        }
+                    ]
+                },
+                {
+                    "group": "admin",
+                    "permissions": [
+                        {
+                            "resource": "*/*",
+                            "methods": [
+                                "POST",
+                                "GET",
+                                "PUT"
+                            ],
+                            "action": "allow"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "endpoint": {
+        "version": "/v1.0",
+        "public": "public",
+        "private": "private"
+    },
+    "context": {
+        "scope": {
+            "private": "private",
+            "public": "public"
+        }
+    },
+    "alibabaCloud": {
+        "client": {
+            "endpoint": "https://business.ap-southeast-1.aliyuncs.com",
+            "apiVersion": "2017-12-14",
+            "accessKeyId": "",
+            "accessKeySecret": ""
+        },
+        "request": {
+            "timeout": 10000,
+            "method": "POST",
+            "formatAction": true,
+            "formatParams": true
+        }
+    },
+    "jwt": {
+        "expiresIn": "12 hours"
+    },
+    "authenticate": {
+        "serializeKey": "id"
+    },
+    "cache": {
+        "debug": false,
+        "defaultDuration": "1 hour",
+        "enabled": true
+    },
+    "errorReporter": {
+        "subject": "[SYSTEM ALERT]",
+        "text": "[SYSTEM ALERT] UNCAUGHT ERROR!!!"
+    },
+    "sendGrid": {
+        "token": "",
+        "defaultFrom": {
+            "mailAddress": ""
+        },
+        "defaultTo": {
+            "mailAddress": ""
+        }
+    },
+    "twilio": {
+        "twiml": "",
+        "accountSid": "",
+        "authToken": "",
+        "defaultFrom": {
+            "phoneNumber": "",
+            "callPrefix": ""
+        },
+        "defaultTo": {
+            "phoneNumber": "",
+            "callPrefix": ""
+        }
+    },
+    "file": {
+        "base": {
+            "directory": "./tmp/"
+        },
+        "oss": {
+            "region": "",
+            "accessKeyId": "",
+            "accessKeySecret": "",
+            "bucket": ""
+        }
+    },
+    "google": {
+        "authenticator": {
+            "length": 20,
+            "name": "",
+            "issuer": "api"
+        }
+    },
+    "db": {
+        "development": {
+            "user": "test",
+            "username": "test",
+            "password": "Test_1234",
+            "database": "test_utf8",
+            "host": "127.0.0.1",
+            "port": "3306",
+            "dialect": "mysql",
+            "dialectOptions": {
+                "connectTimeout": 5000,
+                "bigNumberStrings": false,
+                "supportBigNumbers": true
+            },
+            "pool": {
+                "max": 100,
+                "min": 1,
+                "idle": 60000,
+                "acquire": 60000,
+                "evict": 90000,
+                "handleDisconnects": true
+            },
+            "timezone": "UTC",
+            "define": {
+                "underscored": false,
+                "timestamps": true,
+                "freezeTableName": true
+            },
+            "benchmark": true
+        },
+        "test": {
+            "user": "test",
+            "username": "test",
+            "password": "Test_1234",
+            "database": "test_utf8",
+            "host": "127.0.0.1",
+            "port": "3306",
+            "dialect": "mysql",
+            "dialectOptions": {
+                "connectTimeout": 5000,
+                "bigNumberStrings": false,
+                "supportBigNumbers": true
+            },
+            "pool": {
+                "max": 100,
+                "min": 1,
+                "idle": 60000,
+                "acquire": 60000,
+                "evict": 90000,
+                "handleDisconnects": true
+            },
+            "timezone": "UTC",
+            "define": {
+                "underscored": false,
+                "timestamps": true,
+                "freezeTableName": true
+            },
+            "benchmark": true
+        },
+        "production": {
+            "user": "test",
+            "username": "test",
+            "password": "Test_1234",
+            "database": "test_utf8",
+            "host": "127.0.0.1",
+            "port": "3306",
+            "dialect": "mysql",
+            "dialectOptions": {
+                "connectTimeout": 5000,
+                "bigNumberStrings": false,
+                "supportBigNumbers": true
+            },
+            "pool": {
+                "max": 100,
+                "min": 1,
+                "idle": 60000,
+                "acquire": 60000,
+                "evict": 90000,
+                "handleDisconnects": true
+            },
+            "timezone": "UTC",
+            "define": {
+                "underscored": false,
+                "timestamps": true,
+                "freezeTableName": true
+            },
+            "benchmark": true
+        }
+    },
+    "mailgun": {
+        "apiKey": "",
+        "domain": "",
+        "defaultFrom": {
+            "mailAddress": "fizzjs.2021@gmail.com"
+        },
+        "defaultTo": {
+            "mailAddress": "fizzjs2021@gmail.com"
+        }
+    },
+    "openssl": {
+        "algorithm": "aes-256-cbc",
+        "encoding": "utf8",
+        "digest": "base64"
+    },
+    "rabbitmq": {
+        "credentials": {
+            "username": "administrator",
+            "password": "administrator"
+        },
+        "url": "amqp://administrator:administrator@127.0.0.1:5672?hearbeat=60&frameMax=0x1000",
+        "hostname": "127.0.0.1",
+        "port": 5672
+    },
+    "request": {
+        "plugins": {
+            "debugger": true,
+            "retryDelay": true,
+            "charset": true,
+            "responseTime": true,
+            "verboseErrors": true,
+            "proxy": "",
+            "prefix": "",
+            "suffix": "",
+            "serializer": "camel",
+            "throttle": {
+                "active": true,
+                "rate": 10,
+                "ratePer": 10000,
+                "concurrent": 5
+            }
+        },
+        "timeout": {
+            "response": 60000,
+            "deadline": 60000
+        }
+    },
+    "requestLogger": {
+        "level": "combined",
+        "format": "[URL: :url] [UA: :user-agent]"
+    },
+    "security": {
+        "parser": {
+            "urlencoded": {
+                "extended": false,
+                "limit": "8mb",
+                "parameterLimit": 100000
+            },
+            "json": {
+                "limit": "8mb"
+            }
+        },
+        "curf": {
+            "enabled": false,
+            "cookie": false
+        },
+        "timeout": {
+            "threshold": 60000,
+            "enabled": true
+        },
+        "cors": {
+            "credentials": true,
+            "origin": "http://localhost"
+        },
+        "rateLimit": {
+            "enabled": false,
+            "default": {
+                "windowMs": 60000,
+                "max": 25000,
+                "message": "Too many requests, please try again later",
+                "statusCode": 504,
+                "headers": true,
+                "skipSuccessfulRequests": false,
+                "skipFailedRequests": false
+            },
+            "slowDown": {
+                "windowMs": 10000,
+                "delayAfter": 50000,
+                "delayMs": 100,
+                "maxDelayMs": 2000,
+                "skipSuccessfulRequests": false,
+                "skipFailedRequests": false
+            }
+        }
+    },
+    "sentry": {
+        "dsn": "",
+        "tracing": {
+            "enable": true,
+            "sampleRate": 1
+        }
+    },
+    "static": {
+        "directory": "assets"
+    }
+}

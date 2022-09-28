@@ -1,0 +1,4499 @@
+{
+    "type": "object",
+    "properties": {
+        "clr": {
+            "type": "object",
+            "properties": {
+                "hide": {
+                    "type": "string"
+                },
+                "info": {
+                    "type": "string"
+                },
+                "more": {
+                    "type": "string"
+                },
+                "next": {
+                    "type": "string"
+                },
+                "open": {
+                    "type": "string"
+                },
+                "show": {
+                    "type": "string"
+                },
+                "close": {
+                    "type": "string"
+                },
+                "danger": {
+                    "type": "string"
+                },
+                "expand": {
+                    "type": "string"
+                },
+                "select": {
+                    "type": "string"
+                },
+                "current": {
+                    "type": "string"
+                },
+                "loading": {
+                    "type": "string"
+                },
+                "success": {
+                    "type": "string"
+                },
+                "warning": {
+                    "type": "string"
+                },
+                "collapse": {
+                    "type": "string"
+                },
+                "lastPage": {
+                    "type": "string"
+                },
+                "maxValue": {
+                    "type": "string"
+                },
+                "minValue": {
+                    "type": "string"
+                },
+                "nextPage": {
+                    "type": "string"
+                },
+                "previous": {
+                    "type": "string"
+                },
+                "firstPage": {
+                    "type": "string"
+                },
+                "selectAll": {
+                    "type": "string"
+                },
+                "rowActions": {
+                    "type": "string"
+                },
+                "sortColumn": {
+                    "type": "string"
+                },
+                "totalPages": {
+                    "type": "string"
+                },
+                "currentPage": {
+                    "type": "string"
+                },
+                "pickColumns": {
+                    "type": "string"
+                },
+                "showColumns": {
+                    "type": "string"
+                },
+                "previousPage": {
+                    "type": "string"
+                },
+                "datepickerToggle": {
+                    "type": "string"
+                },
+                "stackViewChanged": {
+                    "type": "string"
+                },
+                "verticalNavToggle": {
+                    "type": "string"
+                },
+                "allColumnsSelected": {
+                    "type": "string"
+                },
+                "datepickerNextMonth": {
+                    "type": "string"
+                },
+                "datepickerNextDecade": {
+                    "type": "string"
+                },
+                "datepickerCurrentMonth": {
+                    "type": "string"
+                },
+                "datepickerCurrentDecade": {
+                    "type": "string"
+                },
+                "datepickerPreviousMonth": {
+                    "type": "string"
+                },
+                "datepickerPreviousDecade": {
+                    "type": "string"
+                },
+                "datepickerSelectYearText": {
+                    "type": "string"
+                },
+                "singleSelectionAriaLabel": {
+                    "type": "string"
+                },
+                "alertCloseButtonAriaLabel": {
+                    "type": "string"
+                },
+                "datepickerSelectMonthText": {
+                    "type": "string"
+                },
+                "detailExpandableAriaLabel": {
+                    "type": "string"
+                },
+                "singleActionableAriaLabel": {
+                    "type": "string"
+                },
+                "showColumnsMenuDescription": {
+                    "type": "string"
+                },
+                "daypickerSRCurrentYearPhrase": {
+                    "type": "string"
+                },
+                "daypickerSRCurrentMonthPhrase": {
+                    "type": "string"
+                },
+                "daypickerSRCurrentDecadePhrase": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "hide",
+                "info",
+                "more",
+                "next",
+                "open",
+                "show",
+                "close",
+                "danger",
+                "expand",
+                "select",
+                "current",
+                "loading",
+                "success",
+                "warning",
+                "collapse",
+                "lastPage",
+                "maxValue",
+                "minValue",
+                "nextPage",
+                "previous",
+                "firstPage",
+                "selectAll",
+                "rowActions",
+                "sortColumn",
+                "totalPages",
+                "currentPage",
+                "pickColumns",
+                "showColumns",
+                "previousPage",
+                "datepickerToggle",
+                "stackViewChanged",
+                "verticalNavToggle",
+                "allColumnsSelected",
+                "datepickerNextMonth",
+                "datepickerNextDecade",
+                "datepickerCurrentMonth",
+                "datepickerCurrentDecade",
+                "datepickerPreviousMonth",
+                "datepickerPreviousDecade",
+                "datepickerSelectYearText",
+                "singleSelectionAriaLabel",
+                "alertCloseButtonAriaLabel",
+                "datepickerSelectMonthText",
+                "detailExpandableAriaLabel",
+                "singleActionableAriaLabel",
+                "showColumnsMenuDescription",
+                "daypickerSRCurrentYearPhrase",
+                "daypickerSRCurrentMonthPhrase",
+                "daypickerSRCurrentDecadePhrase"
+            ]
+        },
+        "init": {
+            "type": "string"
+        },
+        "menu": {
+            "type": "object",
+            "properties": {
+                "acl": {
+                    "type": "string"
+                },
+                "home": {
+                    "type": "string"
+                },
+                "user": {
+                    "type": "string"
+                },
+                "order": {
+                    "type": "string"
+                },
+                "logout": {
+                    "type": "string"
+                },
+                "account": {
+                    "type": "string"
+                },
+                "product": {
+                    "type": "string"
+                },
+                "setting": {
+                    "type": "string"
+                },
+                "webpage": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "customer": {
+                    "type": "string"
+                },
+                "language": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "acl",
+                "home",
+                "user",
+                "order",
+                "logout",
+                "account",
+                "product",
+                "setting",
+                "webpage",
+                "category",
+                "customer",
+                "language"
+            ]
+        },
+        "tour": {
+            "type": "object",
+            "properties": {
+                "step1": {
+                    "type": "object",
+                    "properties": {
+                        "text": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "text",
+                        "title"
+                    ]
+                },
+                "step2": {
+                    "type": "object",
+                    "properties": {
+                        "text": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "text",
+                        "title"
+                    ]
+                },
+                "step3": {
+                    "type": "object",
+                    "properties": {
+                        "text": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "text",
+                        "title"
+                    ]
+                },
+                "step4": {
+                    "type": "object",
+                    "properties": {
+                        "text": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "text",
+                        "title"
+                    ]
+                }
+            },
+            "required": [
+                "step1",
+                "step2",
+                "step3",
+                "step4"
+            ]
+        },
+        "pages": {
+            "type": "object",
+            "properties": {
+                "acl": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index"
+                    ]
+                },
+                "home": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index"
+                    ]
+                },
+                "totp": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        },
+                                        "11": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10",
+                                        "11"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index"
+                    ]
+                },
+                "user": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "delete": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "detail": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "update": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create",
+                        "delete",
+                        "detail",
+                        "update"
+                    ]
+                },
+                "error": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index"
+                    ]
+                },
+                "login": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index"
+                    ]
+                },
+                "order": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "delete": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "detail": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "update": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create",
+                        "delete",
+                        "detail",
+                        "update"
+                    ]
+                },
+                "account": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "security": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create",
+                        "security"
+                    ]
+                },
+                "product": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "delete": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "detail": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "update": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create",
+                        "delete",
+                        "detail",
+                        "update"
+                    ]
+                },
+                "setting": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create"
+                    ]
+                },
+                "webpage": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "delete": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "detail": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "update": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create",
+                        "delete",
+                        "detail",
+                        "update"
+                    ]
+                },
+                "category": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "delete": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "detail": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "update": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create",
+                        "delete",
+                        "detail",
+                        "update"
+                    ]
+                },
+                "customer": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "delete": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "detail": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "update": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create",
+                        "delete",
+                        "detail",
+                        "update"
+                    ]
+                },
+                "language": {
+                    "type": "object",
+                    "properties": {
+                        "index": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "create": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "delete": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "detail": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        },
+                        "update": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "content": {
+                                    "type": "object",
+                                    "properties": {
+                                        "1": {
+                                            "type": "string"
+                                        },
+                                        "2": {
+                                            "type": "string"
+                                        },
+                                        "3": {
+                                            "type": "string"
+                                        },
+                                        "4": {
+                                            "type": "string"
+                                        },
+                                        "5": {
+                                            "type": "string"
+                                        },
+                                        "6": {
+                                            "type": "string"
+                                        },
+                                        "7": {
+                                            "type": "string"
+                                        },
+                                        "8": {
+                                            "type": "string"
+                                        },
+                                        "9": {
+                                            "type": "string"
+                                        },
+                                        "10": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "header",
+                                "content",
+                                "description"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "index",
+                        "create",
+                        "delete",
+                        "detail",
+                        "update"
+                    ]
+                }
+            },
+            "required": [
+                "acl",
+                "home",
+                "totp",
+                "user",
+                "error",
+                "login",
+                "order",
+                "account",
+                "product",
+                "setting",
+                "webpage",
+                "category",
+                "customer",
+                "language"
+            ]
+        },
+        "common": {
+            "type": "object",
+            "properties": {
+                "en": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "ja": {
+                    "type": "string"
+                },
+                "ok": {
+                    "type": "string"
+                },
+                "qr": {
+                    "type": "string"
+                },
+                "to": {
+                    "type": "string"
+                },
+                "csv": {
+                    "type": "string"
+                },
+                "fee": {
+                    "type": "string"
+                },
+                "img": {
+                    "type": "string"
+                },
+                "row": {
+                    "type": "string"
+                },
+                "back": {
+                    "type": "string"
+                },
+                "file": {
+                    "type": "string"
+                },
+                "from": {
+                    "type": "string"
+                },
+                "home": {
+                    "type": "string"
+                },
+                "html": {
+                    "type": "string"
+                },
+                "i18N": {
+                    "type": "string"
+                },
+                "mode": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "next": {
+                    "type": "string"
+                },
+                "none": {
+                    "type": "string"
+                },
+                "read": {
+                    "type": "string"
+                },
+                "role": {
+                    "type": "string"
+                },
+                "rows": {
+                    "type": "string"
+                },
+                "totp": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "clear": {
+                    "type": "string"
+                },
+                "close": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "limit": {
+                    "type": "string"
+                },
+                "login": {
+                    "type": "string"
+                },
+                "other": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "string"
+                },
+                "query": {
+                    "type": "string"
+                },
+                "range": {
+                    "type": "string"
+                },
+                "roles": {
+                    "type": "object",
+                    "properties": {
+                        "na": {
+                            "type": "string"
+                        },
+                        "agent": {
+                            "type": "string"
+                        },
+                        "manager": {
+                            "type": "string"
+                        },
+                        "unknown": {
+                            "type": "string"
+                        },
+                        "operator": {
+                            "type": "string"
+                        },
+                        "head_office": {
+                            "type": "string"
+                        },
+                        "master_agent": {
+                            "type": "string"
+                        },
+                        "administrator": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "na",
+                        "agent",
+                        "manager",
+                        "unknown",
+                        "operator",
+                        "head_office",
+                        "master_agent",
+                        "administrator"
+                    ]
+                },
+                "scope": {
+                    "type": "string"
+                },
+                "steps": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "token": {
+                    "type": "string"
+                },
+                "action": {
+                    "type": "string"
+                },
+                "amount": {
+                    "type": "string"
+                },
+                "backTo": {
+                    "type": "string"
+                },
+                "cancel": {
+                    "type": "string"
+                },
+                "change": {
+                    "type": "string"
+                },
+                "config": {
+                    "type": "string"
+                },
+                "create": {
+                    "type": "string"
+                },
+                "delete": {
+                    "type": "string"
+                },
+                "detail": {
+                    "type": "string"
+                },
+                "finish": {
+                    "type": "string"
+                },
+                "layout": {
+                    "type": "string"
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "noData": {
+                    "type": "string"
+                },
+                "notSet": {
+                    "type": "string"
+                },
+                "online": {
+                    "type": "string"
+                },
+                "reload": {
+                    "type": "string"
+                },
+                "scopes": {
+                    "type": "object",
+                    "properties": {
+                        "public": {
+                            "type": "string"
+                        },
+                        "private": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "public",
+                        "private"
+                    ]
+                },
+                "search": {
+                    "type": "string"
+                },
+                "select": {
+                    "type": "string"
+                },
+                "sortBy": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "submit": {
+                    "type": "string"
+                },
+                "toggle": {
+                    "type": "string"
+                },
+                "update": {
+                    "type": "string"
+                },
+                "verify": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "appName": {
+                    "type": "string"
+                },
+                "confirm": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "enabled": {
+                    "type": "string"
+                },
+                "isHuman": {
+                    "type": "string"
+                },
+                "isRobot": {
+                    "type": "string"
+                },
+                "loading": {
+                    "type": "string"
+                },
+                "locales": {
+                    "type": "object",
+                    "properties": {
+                        "en": {
+                            "type": "string"
+                        },
+                        "ja": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "en",
+                        "ja"
+                    ]
+                },
+                "offline": {
+                    "type": "string"
+                },
+                "options": {
+                    "type": "string"
+                },
+                "perPage": {
+                    "type": "string"
+                },
+                "remarks": {
+                    "type": "string"
+                },
+                "setting": {
+                    "type": "string"
+                },
+                "txPrice": {
+                    "type": "string"
+                },
+                "complete": {
+                    "type": "string"
+                },
+                "criteria": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "createdAt": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "title",
+                        "createdAt"
+                    ]
+                },
+                "disabled": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "pageType": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "previous": {
+                    "type": "string"
+                },
+                "remember": {
+                    "type": "string"
+                },
+                "security": {
+                    "type": "string"
+                },
+                "statuses": {
+                    "type": "object",
+                    "properties": {
+                        "active": {
+                            "type": "string"
+                        },
+                        "pending": {
+                            "type": "string"
+                        },
+                        "unknown": {
+                            "type": "string"
+                        },
+                        "inactive": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "active",
+                        "pending",
+                        "unknown",
+                        "inactive"
+                    ]
+                },
+                "username": {
+                    "type": "string"
+                },
+                "validate": {
+                    "type": "string"
+                },
+                "countryId": {
+                    "type": "string"
+                },
+                "createdAt": {
+                    "type": "string"
+                },
+                "createdId": {
+                    "type": "string"
+                },
+                "deletedAt": {
+                    "type": "string"
+                },
+                "deletedId": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastLogin": {
+                    "type": "string"
+                },
+                "pageTypes": {
+                    "type": "object",
+                    "properties": {
+                        "faq": {
+                            "type": "string"
+                        },
+                        "free": {
+                            "type": "string"
+                        },
+                        "about": {
+                            "type": "string"
+                        },
+                        "service": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "faq",
+                        "free",
+                        "about",
+                        "service"
+                    ]
+                },
+                "productId": {
+                    "type": "string"
+                },
+                "selectAll": {
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "type": "string"
+                },
+                "updatedId": {
+                    "type": "string"
+                },
+                "backToHome": {
+                    "type": "string"
+                },
+                "categoryId": {
+                    "type": "string"
+                },
+                "currencyId": {
+                    "type": "string"
+                },
+                "customerId": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "exportAsCsv": {
+                    "type": "string"
+                },
+                "pleaseSelect": {
+                    "type": "string"
+                },
+                "toggleColumn": {
+                    "type": "string"
+                },
+                "changePassword": {
+                    "type": "string"
+                },
+                "confirmPassword": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "en",
+                "id",
+                "ja",
+                "ok",
+                "qr",
+                "to",
+                "csv",
+                "fee",
+                "img",
+                "row",
+                "back",
+                "file",
+                "from",
+                "home",
+                "html",
+                "i18N",
+                "mode",
+                "name",
+                "next",
+                "none",
+                "read",
+                "role",
+                "rows",
+                "totp",
+                "type",
+                "clear",
+                "close",
+                "email",
+                "limit",
+                "login",
+                "other",
+                "phone",
+                "price",
+                "query",
+                "range",
+                "roles",
+                "scope",
+                "steps",
+                "title",
+                "token",
+                "action",
+                "amount",
+                "backTo",
+                "cancel",
+                "change",
+                "config",
+                "create",
+                "delete",
+                "detail",
+                "finish",
+                "layout",
+                "locale",
+                "noData",
+                "notSet",
+                "online",
+                "reload",
+                "scopes",
+                "search",
+                "select",
+                "sortBy",
+                "status",
+                "submit",
+                "toggle",
+                "update",
+                "verify",
+                "address",
+                "appName",
+                "confirm",
+                "content",
+                "enabled",
+                "isHuman",
+                "isRobot",
+                "loading",
+                "locales",
+                "offline",
+                "options",
+                "perPage",
+                "remarks",
+                "setting",
+                "txPrice",
+                "complete",
+                "criteria",
+                "disabled",
+                "lastName",
+                "pageType",
+                "password",
+                "previous",
+                "remember",
+                "security",
+                "statuses",
+                "username",
+                "validate",
+                "countryId",
+                "createdAt",
+                "createdId",
+                "deletedAt",
+                "deletedId",
+                "firstName",
+                "lastLogin",
+                "pageTypes",
+                "productId",
+                "selectAll",
+                "updatedAt",
+                "updatedId",
+                "backToHome",
+                "categoryId",
+                "currencyId",
+                "customerId",
+                "description",
+                "exportAsCsv",
+                "pleaseSelect",
+                "toggleColumn",
+                "changePassword",
+                "confirmPassword"
+            ]
+        },
+        "errors": {
+            "type": "object",
+            "properties": {
+                "loginFailed": {
+                    "type": "string"
+                },
+                "deleteFailed": {
+                    "type": "string"
+                },
+                "invalidToken": {
+                    "type": "string"
+                },
+                "loginSuccess": {
+                    "type": "string"
+                },
+                "networkError": {
+                    "type": "string"
+                },
+                "unknownError": {
+                    "type": "string"
+                },
+                "updateFailed": {
+                    "type": "string"
+                },
+                "deleteSuccess": {
+                    "type": "string"
+                },
+                "updateSuccess": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "loginFailed",
+                "deleteFailed",
+                "invalidToken",
+                "loginSuccess",
+                "networkError",
+                "unknownError",
+                "updateFailed",
+                "deleteSuccess",
+                "updateSuccess"
+            ]
+        },
+        "sentry": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "subtitle": {
+                    "type": "string"
+                },
+                "labelName": {
+                    "type": "string"
+                },
+                "subtitle2": {
+                    "type": "string"
+                },
+                "labelClose": {
+                    "type": "string"
+                },
+                "labelEmail": {
+                    "type": "string"
+                },
+                "labelSubmit": {
+                    "type": "string"
+                },
+                "errorGeneric": {
+                    "type": "string"
+                },
+                "labelComments": {
+                    "type": "string"
+                },
+                "errorFormEntry": {
+                    "type": "string"
+                },
+                "successMessage": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "title",
+                "subtitle",
+                "labelName",
+                "subtitle2",
+                "labelClose",
+                "labelEmail",
+                "labelSubmit",
+                "errorGeneric",
+                "labelComments",
+                "errorFormEntry",
+                "successMessage"
+            ]
+        },
+        "validation": {
+            "type": "object",
+            "properties": {
+                "hint": {
+                    "type": "object",
+                    "properties": {
+                        "date": {
+                            "type": "string"
+                        },
+                        "file": {
+                            "type": "string"
+                        },
+                        "json": {
+                            "type": "string"
+                        },
+                        "none": {
+                            "type": "string"
+                        },
+                        "text": {
+                            "type": "string"
+                        },
+                        "time": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "query": {
+                            "type": "string"
+                        },
+                        "token": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "string"
+                        },
+                        "select": {
+                            "type": "string"
+                        },
+                        "confirm": {
+                            "type": "string"
+                        },
+                        "alphaNum": {
+                            "type": "string"
+                        },
+                        "textarea": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "date",
+                        "file",
+                        "json",
+                        "none",
+                        "text",
+                        "time",
+                        "email",
+                        "query",
+                        "token",
+                        "number",
+                        "select",
+                        "confirm",
+                        "alphaNum",
+                        "textarea"
+                    ]
+                },
+                "messages": {
+                    "type": "object",
+                    "properties": {
+                        "max": {
+                            "type": "string"
+                        },
+                        "min": {
+                            "type": "string"
+                        },
+                        "file": {
+                            "type": "string"
+                        },
+                        "async": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "isDate": {
+                            "type": "string"
+                        },
+                        "isJson": {
+                            "type": "string"
+                        },
+                        "isJsonSchema": {
+                            "type": "string"
+                        },
+                        "isTime": {
+                            "type": "string"
+                        },
+                        "alphaNum": {
+                            "type": "string"
+                        },
+                        "fileSize": {
+                            "type": "string"
+                        },
+                        "fullSize": {
+                            "type": "string"
+                        },
+                        "halfSize": {
+                            "type": "string"
+                        },
+                        "isNumber": {
+                            "type": "string"
+                        },
+                        "required": {
+                            "type": "string"
+                        },
+                        "isDecimal": {
+                            "type": "string"
+                        },
+                        "maxLength": {
+                            "type": "string"
+                        },
+                        "minLength": {
+                            "type": "string"
+                        },
+                        "isDateRange": {
+                            "type": "string"
+                        },
+                        "fileExtension": {
+                            "type": "string"
+                        },
+                        "isSamePassword": {
+                            "type": "string"
+                        },
+                        "invalidPassword": {
+                            "type": "string"
+                        },
+                        "insecurePassword": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "max",
+                        "min",
+                        "file",
+                        "async",
+                        "email",
+                        "isDate",
+                        "isJson",
+                        "isJsonSchema",
+                        "isTime",
+                        "alphaNum",
+                        "fileSize",
+                        "fullSize",
+                        "halfSize",
+                        "isNumber",
+                        "required",
+                        "isDecimal",
+                        "maxLength",
+                        "minLength",
+                        "isDateRange",
+                        "fileExtension",
+                        "isSamePassword",
+                        "invalidPassword",
+                        "insecurePassword"
+                    ]
+                }
+            },
+            "required": [
+                "hint",
+                "messages"
+            ]
+        },
+        "placeholder": {
+            "type": "object",
+            "properties": {
+                "fee": {
+                    "type": "string"
+                },
+                "img": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string"
+                },
+                "file": {
+                    "type": "string"
+                },
+                "html": {
+                    "type": "string"
+                },
+                "i18N": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "role": {
+                    "type": "string"
+                },
+                "time": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "string"
+                },
+                "query": {
+                    "type": "string"
+                },
+                "scope": {
+                    "type": "string"
+                },
+                "token": {
+                    "type": "string"
+                },
+                "config": {
+                    "type": "string"
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "remarks": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "pageType": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "countryId": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "categoryId": {
+                    "type": "string"
+                },
+                "currencyId": {
+                    "type": "string"
+                },
+                "customerId": {
+                    "type": "string"
+                },
+                "confirmPassword": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "fee",
+                "img",
+                "date",
+                "file",
+                "html",
+                "i18N",
+                "name",
+                "role",
+                "time",
+                "email",
+                "phone",
+                "price",
+                "query",
+                "scope",
+                "token",
+                "config",
+                "locale",
+                "status",
+                "address",
+                "remarks",
+                "lastName",
+                "pageType",
+                "password",
+                "username",
+                "countryId",
+                "firstName",
+                "categoryId",
+                "currencyId",
+                "customerId",
+                "confirmPassword"
+            ]
+        }
+    },
+    "required": [
+        "clr",
+        "init",
+        "menu",
+        "tour",
+        "pages",
+        "common",
+        "errors",
+        "sentry",
+        "validation",
+        "placeholder"
+    ]
+}

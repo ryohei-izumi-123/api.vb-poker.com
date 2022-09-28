@@ -1,0 +1,236 @@
+'use strict'
+// @ts-check
+
+const { Sequelize } = require('@fizz.js/node-model/libs')
+const {
+  Model,
+  DataTypes
+} = Sequelize
+const Logger = require('@fizz.js/node-logger/libs')
+const CONSTANT = require('@fizz.js/node-constant/libs')
+
+/**
+ *
+ *
+ * @class ModelTransactions
+ * @extends {Model}
+ */
+class ModelTransactions extends Model {
+  /**
+   *
+   *
+   * @static
+   * @param {*} sequelize
+   * @returns {ModelTransactions}
+   * @memberof ModelTransactions
+   */
+  static init(sequelize) {
+    return super.init({
+      id: {
+        type: DataTypes.BIGINT,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+        field: 'id'
+      },
+      fromId: {
+        type: DataTypes.INTEGER(8).UNSIGNED,
+        allowNull: false,
+        references: {
+        	model: 'organizations',
+        	key: 'id'
+        },
+        field: 'from_id'
+      },
+      fromBalance: {
+        type: DataTypes.DECIMAL,
+        allowNull: false,
+        defaultValue: '0.0000',
+        field: 'from_balance'
+      },
+      toId: {
+        type: DataTypes.INTEGER(8).UNSIGNED,
+        allowNull: true,
+        references: {
+        	model: 'organizations',
+        	key: 'id'
+        },
+        field: 'to_id'
+      },
+      toBalance: {
+        type: DataTypes.DECIMAL,
+        allowNull: true,
+        field: 'to_balance'
+      },
+      playerId: {
+        type: DataTypes.INTEGER(8).UNSIGNED,
+        allowNull: true,
+        references: {
+        	model: 'players',
+        	key: 'id'
+        },
+        field: 'player_id'
+      },
+      playerBalance: {
+        type: DataTypes.DECIMAL,
+        allowNull: true,
+        field: 'player_balance'
+      },
+      amount: {
+        type: DataTypes.DECIMAL,
+        allowNull: false,
+        defaultValue: '0.0000',
+        field: 'amount'
+      },
+      uuid: {
+        type: DataTypes.STRING(64),
+        allowNull: false,
+        field: 'uuid'
+      },
+      direction: {
+        type: DataTypes.ENUM('increase','decrease'),
+        allowNull: false,
+        defaultValue: 'increase',
+        field: 'direction'
+      },
+      kind: {
+        type: DataTypes.ENUM('cash','bet','payout','refund'),
+        allowNull: false,
+        defaultValue: 'cash',
+        field: 'kind'
+      },
+      refNo: {
+        type: DataTypes.STRING(128),
+        allowNull: true,
+        field: 'ref_no'
+      },
+      remarks: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+        field: 'remarks'
+      },
+      details: {
+        type: DataTypes.JSON,
+        allowNull: false,
+        field: 'details'
+      },
+      status: {
+        type: DataTypes.ENUM('active','inactive','pending'),
+        allowNull: false,
+        defaultValue: 'pending',
+        field: 'status'
+      },
+      createdId: {
+        type: DataTypes.INTEGER(8).UNSIGNED,
+        allowNull: true,
+        field: 'created_id'
+      },
+      createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
+        field: 'created_at'
+      },
+      updatedId: {
+        type: DataTypes.INTEGER(8).UNSIGNED,
+        allowNull: true,
+        field: 'updated_id'
+      },
+      updatedAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
+        field: 'updated_at'
+      },
+      deletedId: {
+        type: DataTypes.INTEGER(8).UNSIGNED,
+        allowNull: true,
+        field: 'deleted_id'
+      },
+      deletedAt: {
+        type: DataTypes.DATE,
+        allowNull: true,
+        field: 'deleted_at'
+      },
+      logical: {
+        type: new DataTypes.VIRTUAL(DataTypes.INTEGER(1), ['logical']),
+        allowNull: true,
+        field: 'logical',
+        get() {
+        	return this.getDataValue('logical')
+        },
+        set(val) {}
+      }
+    }, {
+      modelName: 'transactions',
+      tableName: 'transactions',
+      underscored: false,
+      paranoid: true,
+      sequelize
+    })
+  }
+
+  /**
+   * @example `this.belongsTo(models.your_models)` and also add into target model `this.hasMany(models.your_target_models)` or `this.hasOne(models.your_target_models)`
+   * @static
+   * @param {*} models
+   * @memberof ModelTransactions
+   */
+  static associate(models) {
+    this.belongsTo(models.organizations)
+    this.belongsTo(models.organizations)
+    this.belongsTo(models.players)
+  }
+
+  /**
+   *
+   *
+   * @static
+   * @param {string} [status=CONSTANT.STATUS.ACTIVE]
+   * @returns {ModelTransactions[]}
+   * @memberof ModelTransactions
+   */
+  static async findAllByStatus(status = CONSTANT.STATUS.ACTIVE) {
+    try {
+      const condition = {
+        where: {
+          status
+        }
+      }
+
+      /** @type {ModelTransactions[]} */
+      return await this.findAll(condition)
+    } catch (error) {
+      Logger.error(error)
+      throw error
+    }
+  }
+
+  /**
+   *
+   *
+   * @static
+   * @param {number} id
+   * @param {string} [status=CONSTANT.STATUS.ACTIVE]
+   * @returns {ModelTransactions}
+   * @memberof ModelTransactions
+   */
+  static async findById(id, status = CONSTANT.STATUS.ACTIVE) {
+    try {
+      const condition = {
+        where: {
+          id,
+          status
+        }
+      }
+
+      /** @type {ModelTransactions} */
+      return await this.findOne(condition)
+    } catch (error) {
+      Logger.error(error)
+      throw error
+    }
+  }
+}
+
+module.exports = ModelTransactions

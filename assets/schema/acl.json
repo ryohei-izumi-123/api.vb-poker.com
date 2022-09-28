@@ -1,0 +1,37 @@
+{
+    "type": "array",
+    "items": [
+        {
+            "type": "object",
+            "properties": {
+                "crud": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": "boolean"
+                                },
+                                "action": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "value",
+                                "action"
+                            ]
+                        }
+                    ]
+                },
+                "resource": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "crud",
+                "resource"
+            ]
+        }
+    ]
+}

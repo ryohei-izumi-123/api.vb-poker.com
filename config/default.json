@@ -1,0 +1,508 @@
+{
+  "appName": "api.vb-poker.com",
+  "view": {
+    "dir": "views",
+    "options": {
+      "layout": true
+    },
+    "engine": "ejs"
+  },
+  "file": {
+    "base": {
+      "directory": "./tmp/"
+    },
+    "oss": {
+      "region": "",
+      "accessKeyId": "",
+      "accessKeySecret": "",
+      "bucket": ""
+    }
+  },
+  "security": {
+    "parser": {
+      "urlencoded": {
+        "extended": false,
+        "limit": "8mb",
+        "parameterLimit": 100000
+      },
+      "json": {
+        "limit": "8mb"
+      }
+    },
+    "curf": {
+      "enabled": false,
+      "cookie": false
+    },
+    "timeout": {
+      "threshold": 60000,
+      "enabled": true
+    },
+    "cors": {
+      "credentials": true,
+      "origin": "https://api.vb-poker.com"
+    },
+    "rateLimit": {
+      "enabled": false,
+      "default": {
+        "windowMs": 60000,
+        "max": 25000,
+        "message": "Too many requests, please try again later",
+        "statusCode": 504,
+        "headers": true,
+        "skipSuccessfulRequests": false,
+        "skipFailedRequests": false
+      },
+      "slowDown": {
+        "windowMs": 10000,
+        "delayAfter": 50000,
+        "delayMs": 100,
+        "maxDelayMs": 2000,
+        "skipSuccessfulRequests": false,
+        "skipFailedRequests": false
+      }
+    }
+  },
+  "logger": {
+    "log4js": {
+      "appenders": {
+        "system": {
+          "type": "file",
+          "filename": "logs/system.log",
+          "maxLogSize": 1048576,
+          "backups": 3
+        },
+        "access": {
+          "type": "dateFile",
+          "filename": "logs/access.log",
+          "pattern": "-yyyy-MM-dd"
+        },
+        "error": {
+          "type": "dateFile",
+          "filename": "logs/error.log",
+          "pattern": "-yyyy-MM-dd"
+        },
+        "console": {
+          "type": "console"
+        },
+        "stdout": {
+          "type": "stdout"
+        }
+      },
+      "categories": {
+        "default": {
+          "appenders": [
+            "access",
+            "console",
+            "stdout"
+          ],
+          "level": "INFO"
+        },
+        "access": {
+          "appenders": [
+            "access",
+            "console",
+            "stdout"
+          ],
+          "level": "INFO"
+        },
+        "system": {
+          "appenders": [
+            "system",
+            "console",
+            "stdout"
+          ],
+          "level": "ALL"
+        },
+        "error": {
+          "appenders": [
+            "error",
+            "console",
+            "stdout"
+          ],
+          "level": "WARN"
+        }
+      },
+      "replaceConsole": true
+    },
+    "winston": {
+      "console": {
+        "handleExceptions": true,
+        "json": false,
+        "colorize": true,
+        "timestamp": true
+      },
+      "file": {
+        "handleExceptions": true,
+        "json": false,
+        "colorize": true,
+        "timestamp": true,
+        "datePattern": "YYYY-MM-DD",
+        "zippedArchive": true,
+        "maxSize": "100m",
+        "maxFiles": "30d"
+      },
+      "label": "LOGGER",
+      "level": "debug",
+      "exitOnError": false,
+      "format": {
+        "timestamp": "YYYY-MM-DD HH:mm:ss",
+        "filename": "./logs/app-%DATE%.log"
+      }
+    },
+    "morgan": {
+      "immediate": true,
+      "level": "combined",
+      "format": "[URL: :url] [UA: :user-agent]"
+    }
+  },
+  "rabbitmq": {
+    "credentials": {
+      "username": "administrator",
+      "password": "administrator"
+    },
+    "url": "amqp://administrator:administrator@127.0.0.1:5672?hearbeat=60&frameMax=0x1000",
+    "hostname": "127.0.0.1",
+    "port": 5672
+  },
+  "errorReporter": {
+    "subject": "[SYSTEM ALERT]",
+    "text": "[SYSTEM ALERT] UNCAUGHT ERROR!!!"
+  },
+  "sendGrid": {
+    "token": "",
+    "defaultFrom": {
+      "mailAddress": ""
+    },
+    "defaultTo": {
+      "mailAddress": ""
+    }
+  },
+  "twilio": {
+    "twiml": "",
+    "accountSid": "",
+    "authToken": "",
+    "defaultFrom": {
+      "phoneNumber": "",
+      "callPrefix": ""
+    },
+    "defaultTo": {
+      "phoneNumber": "",
+      "callPrefix": ""
+    }
+  },
+  "context": {
+    "scope": {
+      "private": "private",
+      "public": "public"
+    }
+  },
+  "requestLogger": {
+    "level": "combined",
+    "format": "[URL: :url] [UA: :user-agent]"
+  },
+  "db": {
+    "development": {
+      "user": "vbpokeradmin",
+      "username": "vbpokeradmin",
+      "password": "vbpoker_ZxYBhJd12",
+      "database": "vbpoker_v1",
+      "host": "127.0.0.1",
+      "port": "3306",
+      "dialect": "mysql",
+      "dialectOptions": {
+        "connectTimeout": 5000,
+        "bigNumberStrings": false,
+        "supportBigNumbers": true
+      },
+      "pool": {
+        "max": 100,
+        "min": 1,
+        "idle": 60000,
+        "acquire": 60000,
+        "evict": 90000,
+        "handleDisconnects": true
+      },
+      "timezone": "UTC",
+      "define": {
+        "underscored": false,
+        "timestamps": true,
+        "freezeTableName": true
+      },
+      "benchmark": true
+    },
+    "test": {
+      "user": "vbpokeradmin",
+      "username": "vbpokeradmin",
+      "password": "vbpoker_ZxYBhJd12",
+      "database": "vbpoker_v1",
+      "host": "127.0.0.1",
+      "port": "3306",
+      "dialect": "mysql",
+      "dialectOptions": {
+        "connectTimeout": 5000,
+        "bigNumberStrings": false,
+        "supportBigNumbers": true
+      },
+      "pool": {
+        "max": 100,
+        "min": 1,
+        "idle": 60000,
+        "acquire": 60000,
+        "evict": 90000,
+        "handleDisconnects": true
+      },
+      "timezone": "UTC",
+      "define": {
+        "underscored": false,
+        "timestamps": true,
+        "freezeTableName": true
+      },
+      "benchmark": true
+    },
+    "production": {
+      "replication": {
+        "read": [
+          {
+            "host": "172.31.197.17",
+            "database": "vbpoker_v1",
+            "port": "3306",
+            "user": "vbpokeradmin",
+            "username": "vbpokeradmin",
+            "password": "vbpoker_ZxYBhJd12"
+          },
+          {
+            "host": "172.31.197.18",
+            "database": "vbpoker_v1",
+            "port": "3306",
+            "user": "vbpokeradmin",
+            "username": "vbpokeradmin",
+            "password": "vbpoker_ZxYBhJd12"
+          }
+        ],
+        "write": {
+          "host": "127.0.0.1",
+          "database": "vbpoker_v1",
+          "port": "3306",
+          "user": "vbpokeradmin",
+          "username": "vbpokeradmin",
+          "password": "vbpoker_ZxYBhJd12"
+        }
+      },
+      "dialect": "mysql",
+      "dialectOptions": {
+        "connectTimeout": 5000,
+        "bigNumberStrings": false,
+        "supportBigNumbers": true
+      },
+      "pool": {
+        "max": 100,
+        "min": 1,
+        "idle": 60000,
+        "acquire": 60000,
+        "evict": 90000,
+        "handleDisconnects": true
+      },
+      "timezone": "UTC",
+      "define": {
+        "underscored": false,
+        "timestamps": true,
+        "freezeTableName": true
+      },
+      "benchmark": true
+    }
+  },
+  "mongodb": {
+    "autoReconnect": true,
+    "noDelay": true,
+    "keepAlive": true,
+    "bufferCommands": false,
+    "useFindAndModify": false,
+    "useCreateIndex": true,
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "autoIndex": true,
+    "poolSize": 100,
+    "reconnectTries": 100,
+    "socketTimeoutMS": 10000,
+    "connectTimeoutMS": 10000,
+    "reconnectInterval": 500,
+    "bufferMaxEntries": 0,
+    "useCredentials": false,
+    "username": null,
+    "password": null,
+    "dbName": "vbpokeradmin",
+    "host": "127.0.0.1",
+    "port": 27017,
+    "useReplica": false,
+    "replicaSet": "vbpokeradmin_repl",
+    "replset": {
+      "readPreference": "SECONDARY"
+    },
+    "family": 4
+  },
+  "redis": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 6379,
+    "options": {
+      "no_ready_check": true
+    }
+  },
+  "acl": {
+    "prefix": "acl_",
+    "useSingle": true,
+    "config": {
+      "baseUrl": "",
+      "filename": "acl.json",
+      "path": "config",
+      "defaultRole": "customer",
+      "decodedObjectName": "user",
+      "roleSearchPath": "user.roles.name",
+      "response": {
+        "status": "Access Denied",
+        "message": "You are not authorized to access this resource"
+      }
+    }
+  },
+  "number": {
+    "precision": 4
+  },
+  "endpoint": {
+    "version": "/v1.0",
+    "public": "public",
+    "private": "private"
+  },
+  "sentry": {
+    "useRaven": false,
+    "dsn": "https://a3672e352d86414e82183f194753b43a@o919154.ingest.sentry.io/5863112"
+  },
+  "moment": {
+    "timezone": "UTC"
+  },
+  "session": {
+    "secret": "api.vb-poker.com!!!"
+  },
+  "cookie": {
+    "expired": 86400000,
+    "httpOnly": true
+  },
+  "google": {
+    "recaptcha": {
+      "v2": {
+        "baseUrl": "https://www.google.com/recaptcha/api/siteverify",
+        "siteKey": "6Lf64N0UAAAAAFbSpbAKdqZ5SgaLFpSQXe0ujBfX",
+        "secret": "6Lf64N0UAAAAAMyWqKCUQdwL4gas7V66O3u41tPq"
+      },
+      "v3": {
+        "baseUrl": "https://www.google.com/recaptcha/api/siteverify",
+        "siteKey": "6Lcs4t0UAAAAAHIVmtPJv1vlnmSRymH_nrz1Pye5",
+        "secret": "6Lcs4t0UAAAAAPTAj7_0WdJeLRoHPj7wdehDTkQr"
+      }
+    },
+    "authenticator": {
+      "length": 20,
+      "name": "",
+      "issuer": "vb-poker.com"
+    }
+  },
+  "upload": {
+    "directory": "./tmp/"
+  },
+  "s3": {
+    "bucket": "static.api.vb-poker.com"
+  },
+  "openssl": {
+    "algorithm": "aes-256-cbc",
+    "encoding": "utf8",
+    "digest": "base64"
+  },
+  "log": {
+    "log4js": {
+      "appenders": {
+        "system": {
+          "type": "file",
+          "filename": "logs/system.log",
+          "maxLogSize": 1048576,
+          "backups": 3
+        },
+        "access": {
+          "type": "dateFile",
+          "filename": "logs/access.log",
+          "pattern": "-yyyy-MM-dd"
+        },
+        "error": {
+          "type": "dateFile",
+          "filename": "logs/error.log",
+          "pattern": "-yyyy-MM-dd"
+        },
+        "console": {
+          "type": "console"
+        },
+        "stdout": {
+          "type": "stdout"
+        }
+      },
+      "categories": {
+        "default": {
+          "appenders": [
+            "access",
+            "console",
+            "stdout"
+          ],
+          "level": "INFO"
+        },
+        "access": {
+          "appenders": [
+            "access",
+            "console",
+            "stdout"
+          ],
+          "level": "INFO"
+        },
+        "system": {
+          "appenders": [
+            "system",
+            "console",
+            "stdout"
+          ],
+          "level": "ALL"
+        },
+        "error": {
+          "appenders": [
+            "error",
+            "console",
+            "stdout"
+          ],
+          "level": "WARN"
+        }
+      },
+      "replaceConsole": true
+    },
+    "morgan": {
+      "level": "combined",
+      "format": "[URL: :url] [UA: :user-agent]"
+    },
+    "winston": {
+      "level": "debug",
+      "file": "./logs/api.vb-poker.com.log",
+      "files": "./logs/api.vb-poker.com-%DATE%.log"
+    }
+  },
+  "jwt": {
+    "expiresIn": "12 hours"
+  },
+  "bcrypt": {
+    "strength": 8
+  },
+  "http": {
+    "port": 45500
+  },
+  "socket": {
+    "port": 35500,
+    "options": {
+      "cors": {
+        "origin": "*"
+      }
+    }
+  }
+}

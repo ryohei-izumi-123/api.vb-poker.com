@@ -1,0 +1,22 @@
+[
+  {
+    "group": "user",
+    "permissions": [
+      {
+        "resource": "users/*",
+        "methods": ["POST", "GET", "PUT"],
+        "action": "allow"
+      }
+    ]
+  },
+  {
+    "group": "player",
+    "permissions": [
+      {
+        "resource": "game/*",
+        "methods": ["POST", "GET", "PUT"],
+        "action": "allow"
+      }
+    ]
+  }
+]

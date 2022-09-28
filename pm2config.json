@@ -1,0 +1,14 @@
+{
+  "name": "index.js",
+  "script": "index.js",
+  "exec_mode": "cluster",
+  "instances": 1,
+  "max-memory-restart": "2G",
+  "log-date-format": "YYYY-MM-DD HH:mm Z",
+  "env": {
+    "NODE_ENV": "local"
+  },
+  "env_production": {
+    "NODE_ENV": "production"
+  }
+}

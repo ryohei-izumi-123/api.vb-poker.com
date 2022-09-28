@@ -1,0 +1,22 @@
+{
+  "development": {
+    "user": "vbpokeradmin",
+    "username": "vbpokeradmin",
+    "password": "vbpoker_ZxYBhJd12",
+    "database": "vbpoker_v1",
+    "host": "127.0.0.1",
+    "port": "3306",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "bigNumberStrings": false,
+      "supportBigNumbers": true
+    },
+    "timezone": "UTC",
+    "define": {
+      "underscored": false,
+      "timestamps": true,
+      "freezeTableName": true
+    },
+    "benchmark": true
+  }
+}
